@@ -1,10 +1,10 @@
-# 🏎️ Formula 1 Data Engineering Project
+#  Formula 1 Data Engineering Project
 
 This project demonstrates a complete **cloud-based data engineering pipeline** using **Azure Databricks**, **Azure Data Lake Storage (ADLS Gen2)**, and **Azure Data Factory (ADF)**. It involves ingesting, transforming, and serving structured Formula 1 data for analytics and reporting.
 
 ---
 
-## 🚀 Technologies Used
+##  Technologies Used
 
 - **Azure Data Lake Storage Gen2 (ADLS)** – For storing raw, processed, and curated data
 - **Azure Databricks** – For all data processing using PySpark and Delta Lake
@@ -15,7 +15,7 @@ This project demonstrates a complete **cloud-based data engineering pipeline** u
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 
 ```bash
 f1-data-engineering/
@@ -65,7 +65,7 @@ Orchestration
 
 ADF pipelines coordinate all steps: ingestion → transformation → reporting.
 
-🧠 Key Concepts Demonstrated
+ Key Concepts Demonstrated
 Schema enforcement using StructType
 
 Partitioning strategies for scalable writes
@@ -82,7 +82,7 @@ Orchestration with Azure Data Factory linked services and pipelines
 
 Use of the file_date parameter for time-based filtering
 
-📈 Sample Use Case
+ Sample Use Case
 Load race results incrementally each race week
 
 Merge new results into existing Delta tables without duplicates
@@ -91,14 +91,14 @@ Join across circuits, drivers, results, and constructors
 
 Generate a final report and publish it for Power BI or downstream apps
 
-📂 Paths Used
+ Paths Used
 Raw Layer: abfss://raw@formula1nesodatalake.dfs.core.windows.net/
 
 Processed Layer: abfss://process@formula1nesodatalake.dfs.core.windows.net/
 
 Presentation Layer: abfss://presentation@formula1nesodatalake.dfs.core.windows.net/
 
-🧪 How to Run
+ How to Run
 Spin up a Databricks cluster with Spark 3.x runtime.
 
 Upload notebooks under /notebooks and run sequentially.
@@ -107,5 +107,5 @@ Set up ADF pipeline triggers to automate weekly ingestion.
 
 Run your SQL-based reports or feed the curated layer into Power BI.
 
-📌 Author Notes
+ Author Notes
 This project was built as part of my hands-on learning journey into cloud data engineering, leveraging project-based learning to build job-ready skills.
